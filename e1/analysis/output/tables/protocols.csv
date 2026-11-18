@@ -1,0 +1,3 @@
+protocol,n,FedAvg,Soft,FED-PUB,FED-PUB minus FedAvg [95% CI],FED-PUB wins,Holm p (FedAvg),FED-PUB minus Soft [95% CI],Holm p (Soft)
+"A: redrawn Louvain, budget 1, early stopping",20,0.5204,0.5128,0.4358,"-0.0846 [-0.1082, -0.0609]",1,<0.0001,"-0.0770 [-0.1023, -0.0517]",<0.0001
+"N: redrawn Louvain, full budget, no early stopping",20,0.5797,0.5385,0.4432,"-0.1365 [-0.1631, -0.1098]",0,<0.0001,"-0.0953 [-0.1219, -0.0686]",<0.0001

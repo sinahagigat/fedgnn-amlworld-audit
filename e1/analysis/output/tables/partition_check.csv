@@ -1,0 +1,16 @@
+protocol,variant,seeds,checked,identical
+A,FED-PUB,20,20,20
+N,FED-PUB,20,20,20
+N,FED-PUB (weighted loss),20,20,20
+N,FED-PUB (lr 1e-3),20,20,20
+N,"Local (FED-PUB model, no communication)",20,20,20
+Q0,FED-PUB,20,20,20
+Q1,FED-PUB,20,20,20
+Q2,FED-PUB,20,20,20
+Q3,FED-PUB,20,20,20
+Q4,FED-PUB,20,20,20
+Q5,FED-PUB,20,20,20
+Q6,FED-PUB,20,20,20
+Q7,FED-PUB,20,20,20
+Q8,FED-PUB,20,20,20
+Q9,FED-PUB,20,20,20

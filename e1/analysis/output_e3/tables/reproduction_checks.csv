@@ -1,0 +1,9 @@
+check,seeds,max abs difference
+GCN: centralized full (CE) = paper budget 2,20,0.00e+00
+GCN: centralized full (CH) = CE,20,0.00e+00
+GCN: FedAvg full (FN) = paper N,20,0.00e+00
+GCN: FedAvg patience-20 checkpoint (FN) = paper budget 2,20,0.00e+00
+MLP: centralized full (CE) = paper budget 2,20,4.78e-02
+MLP: centralized full (CH) = CE,20,0.00e+00
+MLP: FedAvg full (FN) = paper N,20,0.00e+00
+MLP: FedAvg patience-20 checkpoint (FN) = paper budget 2,20,6.13e-03

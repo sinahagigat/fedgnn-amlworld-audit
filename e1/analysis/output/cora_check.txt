@@ -1,0 +1,4 @@
+﻿Cora: 2485 nodes, 10138 arcs; partition: METIS, precomputed (pymetis 2025.2.2 (METIS 5), part_graph(10, adjacency=sorted neighbour lists), default options; edge cut 613)
+FED-PUB                  test accuracy at best validation round 82.54 +- 0.39 | final round 82.39 +- 0.44
+Local (no communication) test accuracy at best validation round 81.31 +- 0.21 | final round 80.23 +- 0.37
+published (10 clients, METIS): FED-PUB 81.54 +- 0.12, Local 79.94 +- 0.24

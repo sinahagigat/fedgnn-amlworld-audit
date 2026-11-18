@@ -1,0 +1,5 @@
+comparison,n,mean a,mean b,a minus b [95% CI],wins a,p
+"weighted minus official, full budget",20,0.4638,0.4432,"+0.0206 [-0.0012, +0.0423]",13,0.0973
+"weighted minus official, early-stopped checkpoint",20,0.4497,0.4439,"+0.0058 [-0.0151, +0.0267]",8,0.9273
+"weighted FED-PUB minus FedAvg, full budget",20,0.4638,0.5797,"-0.1159 [-0.1426, -0.0893]",0,<0.0001
+"official FED-PUB minus FedAvg, full budget",20,0.4432,0.5797,"-0.1365 [-0.1631, -0.1098]",0,<0.0001
