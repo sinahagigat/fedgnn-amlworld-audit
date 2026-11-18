@@ -1,0 +1,358 @@
+{
+  "variant": "HI-Small",
+  "provenance": {
+    "files": {
+      "HI-Small_Trans.csv": {
+        "sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+        "bytes": 475664283
+      },
+      "HI-Small_accounts.csv": {
+        "sha256": "786808526e33cfc441212dd6fccda7edfc24172149bed59c6ef59b186836b014",
+        "bytes": 34053187
+      },
+      "HI-Small_Patterns.txt": {
+        "sha256": "2c546b5ce6009e73851f0139af053cf845f08bf92f3bc82fe1eb937dec2ef39b",
+        "bytes": 323844
+      }
+    },
+    "code_sha256": "ec5874158bf4ad95b86f4091c0ec0b2384003cfada66454a37b15d92e0de7229",
+    "python": "3.14.6",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "schema": {
+    "columns_ok": true,
+    "n_rows": 5078345,
+    "label_values": [
+      0,
+      1
+    ],
+    "null_cells": 0
+  },
+  "keys": {
+    "accounts_in_tx": 515088,
+    "account_numbers_in_multiple_banks": 8,
+    "accounts_file_rows": 518581,
+    "accounts_file_unique_keys": 518581,
+    "tx_accounts_missing_from_accounts_file": 0,
+    "entities_with_accounts_in_several_banks": 63362
+  },
+  "stats": {
+    "n_transactions": 5078345,
+    "n_banks": 30470,
+    "n_days": 18,
+    "first_day": "2022-09-01",
+    "last_day": "2022-09-18",
+    "self_loops": 591212,
+    "currency_conversion_tx": 72170,
+    "payment_formats": {
+      "Cheque": 1864331,
+      "Credit Card": 1323324,
+      "ACH": 600797,
+      "Cash": 490891,
+      "Reinvestment": 481056,
+      "Wire": 171855,
+      "Bitcoin": 146091
+    },
+    "per_day": {
+      "2022-09-01": {
+        "n_tx": 1114921,
+        "n_laundering": 322
+      },
+      "2022-09-02": {
+        "n_tx": 754449,
+        "n_laundering": 408
+      },
+      "2022-09-03": {
+        "n_tx": 207382,
+        "n_laundering": 391
+      },
+      "2022-09-04": {
+        "n_tx": 207430,
+        "n_laundering": 407
+      },
+      "2022-09-05": {
+        "n_tx": 482650,
+        "n_laundering": 471
+      },
+      "2022-09-06": {
+        "n_tx": 482089,
+        "n_laundering": 531
+      },
+      "2022-09-07": {
+        "n_tx": 482751,
+        "n_laundering": 497
+      },
+      "2022-09-08": {
+        "n_tx": 482773,
+        "n_laundering": 539
+      },
+      "2022-09-09": {
+        "n_tx": 654467,
+        "n_laundering": 514
+      },
+      "2022-09-10": {
+        "n_tx": 208325,
+        "n_laundering": 442
+      },
+      "2022-09-11": {
+        "n_tx": 396,
+        "n_laundering": 232
+      },
+      "2022-09-12": {
+        "n_tx": 281,
+        "n_laundering": 170
+      },
+      "2022-09-13": {
+        "n_tx": 184,
+        "n_laundering": 106
+      },
+      "2022-09-14": {
+        "n_tx": 121,
+        "n_laundering": 70
+      },
+      "2022-09-15": {
+        "n_tx": 46,
+        "n_laundering": 28
+      },
+      "2022-09-16": {
+        "n_tx": 46,
+        "n_laundering": 26
+      },
+      "2022-09-17": {
+        "n_tx": 23,
+        "n_laundering": 15
+      },
+      "2022-09-18": {
+        "n_tx": 11,
+        "n_laundering": 8
+      }
+    }
+  },
+  "labels": {
+    "tx_positive_rate": 0.0010194266045335635,
+    "account_days": 2480285,
+    "account_day_positive_rate": 0.0032468042986995445,
+    "accounts_ever_positive": 6357,
+    "positive_account_days_per_day": {
+      "2022-09-01": 504,
+      "2022-09-02": 656,
+      "2022-09-03": 646,
+      "2022-09-04": 649,
+      "2022-09-05": 715,
+      "2022-09-06": 833,
+      "2022-09-07": 769,
+      "2022-09-08": 860,
+      "2022-09-09": 784,
+      "2022-09-10": 715,
+      "2022-09-11": 338,
+      "2022-09-12": 239,
+      "2022-09-13": 146,
+      "2022-09-14": 95,
+      "2022-09-15": 38,
+      "2022-09-16": 35,
+      "2022-09-17": 21,
+      "2022-09-18": 10
+    }
+  },
+  "bank_edges": {
+    "inter_bank_share": 0.8638666730992085,
+    "inter_bank_share_laundering": 0.9801043075140042,
+    "inter_bank_share_licit": 0.8637480564412612
+  },
+  "partition_bank_binpack": {
+    "n_clients": 10,
+    "seed": 0,
+    "uses_labels": false,
+    "banks_per_client": [
+      3046,
+      3046,
+      3046,
+      3047,
+      3047,
+      3048,
+      3048,
+      3048,
+      3047,
+      3047
+    ],
+    "client_account_days": [
+      248273,
+      247469,
+      248980,
+      249262,
+      246972,
+      248807,
+      246709,
+      247954,
+      247309,
+      248550
+    ],
+    "client_positive_rate": [
+      0.00358,
+      0.0034,
+      0.00295,
+      0.00281,
+      0.00312,
+      0.00328,
+      0.00298,
+      0.00352,
+      0.00342,
+      0.0034
+    ],
+    "severed_edge_share": 0.7809376873764977,
+    "severed_edge_share_laundering": 0.8910565964844505,
+    "account_days_without_local_edge": 0.6778571817351635,
+    "positive_account_days_touching_a_severed_laundering_edge": 0.9036383956289582,
+    "largest_bank_account_share": 0.006130991209269096,
+    "banks_with_1000_plus_accounts": 24
+  },
+  "temporal_split": {
+    "rule": "60/20/20 of transactions by day",
+    "train_days": [
+      "2022-09-01",
+      "2022-09-02",
+      "2022-09-03",
+      "2022-09-04",
+      "2022-09-05"
+    ],
+    "val_days": [
+      "2022-09-06",
+      "2022-09-07"
+    ],
+    "test_days": [
+      "2022-09-08",
+      "2022-09-09",
+      "2022-09-10",
+      "2022-09-11",
+      "2022-09-12",
+      "2022-09-13",
+      "2022-09-14",
+      "2022-09-15",
+      "2022-09-16",
+      "2022-09-17",
+      "2022-09-18"
+    ],
+    "sizes": {
+      "test": {
+        "account_days": 720800,
+        "positives": 3281,
+        "rate": 0.0045518867924528306
+      },
+      "train": {
+        "account_days": 1309795,
+        "positives": 3170,
+        "rate": 0.0024202260659110775
+      },
+      "val": {
+        "account_days": 449690,
+        "positives": 1602,
+        "rate": 0.0035624541350708265
+      }
+    },
+    "edges_crossing_days": 0
+  },
+  "account_overlap": {
+    "test_account_days_with_account_seen_in_train": 0.9973404550499445,
+    "test_positives_with_account_seen_in_train": 0.9786650411459921,
+    "unseen_test_account_days": 1917,
+    "unseen_test_positives": 70
+  },
+  "leakage": {
+    "label_permutation_invariant": true,
+    "rows_tested": 1869370,
+    "feature_columns": [
+      "n_out",
+      "sum_out",
+      "max_out",
+      "n_dst",
+      "n_in",
+      "sum_in",
+      "max_in",
+      "n_src"
+    ],
+    "patterns_used_as_features": false
+  },
+  "patterns": {
+    "attempts": 370,
+    "pattern_tx": 3209,
+    "laundering_tx_covered_by_patterns": 0.6198570600734016,
+    "pattern_tx_found_in_tx_file": 1.0,
+    "by_type": [
+      {
+        "pattern_type": "BIPARTITE",
+        "attempts": 49,
+        "mean_tx": 5.3673,
+        "mean_banks": 9.8163,
+        "mean_clients": 5.2653,
+        "mean_cut_share": 0.8589,
+        "single_client": 0.0408
+      },
+      {
+        "pattern_type": "CYCLE",
+        "attempts": 54,
+        "mean_tx": 5.3148,
+        "mean_banks": 5.0556,
+        "mean_clients": 3.8889,
+        "mean_cut_share": 0.9009,
+        "single_client": 0.0185
+      },
+      {
+        "pattern_type": "FAN-IN",
+        "attempts": 40,
+        "mean_tx": 7.95,
+        "mean_banks": 8.25,
+        "mean_clients": 5.25,
+        "mean_cut_share": 0.8621,
+        "single_client": 0.0
+      },
+      {
+        "pattern_type": "FAN-OUT",
+        "attempts": 48,
+        "mean_tx": 7.125,
+        "mean_banks": 7.3958,
+        "mean_clients": 4.875,
+        "mean_cut_share": 0.8676,
+        "single_client": 0.0
+      },
+      {
+        "pattern_type": "GATHER-SCATTER",
+        "attempts": 51,
+        "mean_tx": 14.0392,
+        "mean_banks": 13.5098,
+        "mean_clients": 6.4118,
+        "mean_cut_share": 0.8421,
+        "single_client": 0.0
+      },
+      {
+        "pattern_type": "RANDOM",
+        "attempts": 41,
+        "mean_tx": 4.6585,
+        "mean_banks": 5.3902,
+        "mean_clients": 4.122,
+        "mean_cut_share": 0.9084,
+        "single_client": 0.0488
+      },
+      {
+        "pattern_type": "SCATTER-GATHER",
+        "attempts": 44,
+        "mean_tx": 14.2273,
+        "mean_banks": 8.6364,
+        "mean_clients": 5.3864,
+        "mean_cut_share": 0.909,
+        "single_client": 0.0
+      },
+      {
+        "pattern_type": "STACK",
+        "attempts": 43,
+        "mean_tx": 10.8372,
+        "mean_banks": 14.0233,
+        "mean_clients": 5.9767,
+        "mean_cut_share": 0.9131,
+        "single_client": 0.0
+      }
+    ]
+  },
+  "runtime_s": 30.6
+}

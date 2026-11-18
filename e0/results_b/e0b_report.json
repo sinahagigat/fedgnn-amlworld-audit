@@ -1,0 +1,521 @@
+{
+  "code_sha256": "cee94043bc23e734d0e4d003beee0f9afef43cc5d61971a7daa4a28a492abbef",
+  "args": {
+    "data_dir": "<local-path>",
+    "variant": "HI-Small",
+    "out": "<local-path>",
+    "last_day": "2022-09-10",
+    "train_days": 6,
+    "val_days": 2,
+    "threads": 4,
+    "skip_louvain": false,
+    "skip_timing": false
+  },
+  "tail_removed": {
+    "days": [
+      "2022-09-11",
+      "2022-09-12",
+      "2022-09-13",
+      "2022-09-14",
+      "2022-09-15",
+      "2022-09-16",
+      "2022-09-17",
+      "2022-09-18"
+    ],
+    "transactions": 1108,
+    "laundering_tx": 655,
+    "laundering_share_in_tail": 0.5911552346570397,
+    "laundering_share_kept": 0.000890641898339589
+  },
+  "split": {
+    "train_days": [
+      "2022-09-01",
+      "2022-09-02",
+      "2022-09-03",
+      "2022-09-04",
+      "2022-09-05",
+      "2022-09-06"
+    ],
+    "val_days": [
+      "2022-09-07",
+      "2022-09-08"
+    ],
+    "test_days": [
+      "2022-09-09",
+      "2022-09-10"
+    ],
+    "sizes": {
+      "test": {
+        "account_days": 494707,
+        "positives": 1499,
+        "rate": 0.0030300763886502518
+      },
+      "train": {
+        "account_days": 1534411,
+        "positives": 4003,
+        "rate": 0.002608818628125059
+      },
+      "val": {
+        "account_days": 450244,
+        "positives": 1629,
+        "rate": 0.003618038219276659
+      }
+    },
+    "test_unseen_account_days": 1231,
+    "test_unseen_positives": 30
+  },
+  "features": {
+    "columns": [
+      "n_out",
+      "mean_out",
+      "max_out",
+      "std_out",
+      "n_dst",
+      "inter_out",
+      "fx_out",
+      "hour_out",
+      "ncur_out",
+      "fmt_out_ACH",
+      "fmt_out_Bitcoin",
+      "fmt_out_Cash",
+      "fmt_out_Cheque",
+      "fmt_out_Credit Card",
+      "fmt_out_Reinvestment",
+      "fmt_out_Wire",
+      "n_in",
+      "mean_in",
+      "max_in",
+      "std_in",
+      "n_src",
+      "inter_in",
+      "fx_in",
+      "hour_in",
+      "ncur_in",
+      "log_n_out",
+      "log_n_in"
+    ],
+    "n": 27,
+    "label_permutation_invariant": true
+  },
+  "louvain_runtime_s": 71.8,
+  "country_groups": {
+    "n_groups": 10918,
+    "largest_share": 0.06353018377799091,
+    "named_country_share": 0.6100066397710638
+  },
+  "partitions": {
+    "bank_binpack_s0": {
+      "severed_edge_share": 0.7789581223015589,
+      "severed_edge_share_laundering": 0.8836797877045555,
+      "account_days_without_local_edge": 0.676253810456077,
+      "positive_account_days_touching_severed_laundering_edge": 0.9018370495021736,
+      "client_size_min_max": [
+        246381,
+        249520
+      ],
+      "client_positive_rate_min_max": [
+        0.0025969862135299775,
+        0.0035322326284960254
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.8566,
+          "mean_clients": 5.2222,
+          "single_client": 0.0667
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.8739,
+          "mean_clients": 3.6111,
+          "single_client": 0.0556
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.7582,
+          "mean_clients": 4.425,
+          "single_client": 0.125
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.8011,
+          "mean_clients": 4.25,
+          "single_client": 0.1042
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.8389,
+          "mean_clients": 4.902,
+          "single_client": 0.0196
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.7927,
+          "mean_clients": 3.3659,
+          "single_client": 0.1707
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.8423,
+          "mean_clients": 4.8409,
+          "single_client": 0.0682
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.8383,
+          "mean_clients": 6.175,
+          "single_client": 0.075
+        }
+      ],
+      "patterns_single_client_share": 0.08264462809917356
+    },
+    "bank_binpack_s1": {
+      "severed_edge_share": 0.7778074964788919,
+      "severed_edge_share_laundering": 0.8874391862007961,
+      "account_days_without_local_edge": 0.6755193473159627,
+      "positive_account_days_touching_severed_laundering_edge": 0.9009956527836208,
+      "client_size_min_max": [
+        246661,
+        248818
+      ],
+      "client_positive_rate_min_max": [
+        0.0024705811113578105,
+        0.0034967009211608886
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.8953,
+          "mean_clients": 5.2889,
+          "single_client": 0.0222
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.8699,
+          "mean_clients": 3.6481,
+          "single_client": 0.037
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.8519,
+          "mean_clients": 4.45,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.9065,
+          "mean_clients": 4.3333,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.845,
+          "mean_clients": 4.8235,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.8686,
+          "mean_clients": 3.561,
+          "single_client": 0.0732
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.8925,
+          "mean_clients": 4.9318,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.8801,
+          "mean_clients": 6.0,
+          "single_client": 0.025
+        }
+      ],
+      "patterns_single_client_share": 0.01928374655647383
+    },
+    "bank_binpack_s2": {
+      "severed_edge_share": 0.780728376477206,
+      "severed_edge_share_laundering": 0.8920831490490934,
+      "account_days_without_local_edge": 0.6789169955819279,
+      "positive_account_days_touching_severed_laundering_edge": 0.9049221708035339,
+      "client_size_min_max": [
+        246736,
+        249175
+      ],
+      "client_positive_rate_min_max": [
+        0.002507804076292165,
+        0.003347045249322765
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.8897,
+          "mean_clients": 5.4667,
+          "single_client": 0.0222
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.8651,
+          "mean_clients": 3.6111,
+          "single_client": 0.0185
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.8393,
+          "mean_clients": 4.475,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.8948,
+          "mean_clients": 4.3125,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.853,
+          "mean_clients": 5.0,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.9075,
+          "mean_clients": 3.6341,
+          "single_client": 0.0488
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.8842,
+          "mean_clients": 4.8864,
+          "single_client": 0.0227
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.8838,
+          "mean_clients": 6.175,
+          "single_client": 0.025
+        }
+      ],
+      "patterns_single_client_share": 0.01652892561983471
+    },
+    "country_binpack_s0": {
+      "severed_edge_share": 0.5549453373951225,
+      "severed_edge_share_laundering": 0.778858911985847,
+      "account_days_without_local_edge": 0.44511652594498097,
+      "positive_account_days_touching_severed_laundering_edge": 0.77142055812649,
+      "client_size_min_max": [
+        240649,
+        257521
+      ],
+      "client_positive_rate_min_max": [
+        0.002483558678158572,
+        0.0033637730647536105
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.7824,
+          "mean_clients": 4.8444,
+          "single_client": 0.1111
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.8362,
+          "mean_clients": 3.6111,
+          "single_client": 0.0556
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.7472,
+          "mean_clients": 4.275,
+          "single_client": 0.125
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.7628,
+          "mean_clients": 4.0208,
+          "single_client": 0.1458
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.7721,
+          "mean_clients": 4.8824,
+          "single_client": 0.0784
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.6859,
+          "mean_clients": 3.2195,
+          "single_client": 0.2439
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.8526,
+          "mean_clients": 5.0455,
+          "single_client": 0.0682
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.8022,
+          "mean_clients": 5.975,
+          "single_client": 0.1
+        }
+      ],
+      "patterns_single_client_share": 0.11294765840220386
+    },
+    "random_accounts_s0": {
+      "severed_edge_share": 0.7951409398458256,
+      "severed_edge_share_laundering": 0.9000442282176029,
+      "account_days_without_local_edge": 0.6950937378244888,
+      "positive_account_days_touching_severed_laundering_edge": 0.910671715046978,
+      "client_size_min_max": [
+        245280,
+        249693
+      ],
+      "client_positive_rate_min_max": [
+        0.002663270496169296,
+        0.0030209512332158065
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.9221,
+          "mean_clients": 5.6,
+          "single_client": 0.0222
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.9185,
+          "mean_clients": 3.6667,
+          "single_client": 0.0185
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.8976,
+          "mean_clients": 4.7,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.8799,
+          "mean_clients": 4.5,
+          "single_client": 0.0208
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.8901,
+          "mean_clients": 5.098,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.8845,
+          "mean_clients": 3.561,
+          "single_client": 0.0244
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.9077,
+          "mean_clients": 5.0227,
+          "single_client": 0.0
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.8447,
+          "mean_clients": 6.0,
+          "single_client": 0.05
+        }
+      ],
+      "patterns_single_client_share": 0.01652892561983471
+    },
+    "louvain_s0": {
+      "severed_edge_share": 0.06365529125388474,
+      "severed_edge_share_laundering": 0.3847854931446263,
+      "account_days_without_local_edge": 0.01716449635027073,
+      "positive_account_days_touching_severed_laundering_edge": 0.4063946150610013,
+      "client_size_min_max": [
+        243358,
+        252518
+      ],
+      "client_positive_rate_min_max": [
+        0.0024577302420904315,
+        0.003581682138833591
+      ],
+      "patterns_by_type": [
+        {
+          "pattern_type": "BIPARTITE",
+          "mean_cut_share": 0.3657,
+          "mean_clients": 4.4,
+          "single_client": 0.4
+        },
+        {
+          "pattern_type": "CYCLE",
+          "mean_cut_share": 0.444,
+          "mean_clients": 2.6111,
+          "single_client": 0.3889
+        },
+        {
+          "pattern_type": "FAN-IN",
+          "mean_cut_share": 0.4721,
+          "mean_clients": 3.575,
+          "single_client": 0.325
+        },
+        {
+          "pattern_type": "FAN-OUT",
+          "mean_cut_share": 0.3612,
+          "mean_clients": 3.125,
+          "single_client": 0.3542
+        },
+        {
+          "pattern_type": "GATHER-SCATTER",
+          "mean_cut_share": 0.3855,
+          "mean_clients": 3.8824,
+          "single_client": 0.4118
+        },
+        {
+          "pattern_type": "RANDOM",
+          "mean_cut_share": 0.3398,
+          "mean_clients": 2.4146,
+          "single_client": 0.439
+        },
+        {
+          "pattern_type": "SCATTER-GATHER",
+          "mean_cut_share": 0.3703,
+          "mean_clients": 3.6364,
+          "single_client": 0.3864
+        },
+        {
+          "pattern_type": "STACK",
+          "mean_cut_share": 0.4044,
+          "mean_clients": 5.5,
+          "single_client": 0.325
+        }
+      ],
+      "patterns_single_client_share": 0.38016528925619836
+    }
+  },
+  "timing": {
+    "threads": 4,
+    "nodes": 2479362,
+    "undirected_edges": 2320827,
+    "full_gcn": {
+      "train_step_s": 4.5444900000002235,
+      "eval_s": 1.7386574999982258
+    },
+    "full_mlp": {
+      "train_step_s": 1.0599374000012176,
+      "eval_s": 0.3792489000043133
+    },
+    "client0_gcn": {
+      "train_step_s": 0.2645782000035979,
+      "eval_s": 0.11429270000371616
+    },
+    "client0_nodes": 248705,
+    "client0_edges": 24136,
+    "est_fed_round_s": 4.384439500034205,
+    "est_300_rounds_min": 21.922197500171023,
+    "est_central_1500_steps_min": 157.07868749996123
+  },
+  "runtime_s": 240.1
+}
