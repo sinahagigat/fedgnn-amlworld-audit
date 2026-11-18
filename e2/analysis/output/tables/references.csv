@@ -1,0 +1,4 @@
+model,fits,test AP,SD,test ROC-AUC,minus Central-GCN,minus FedAvg (global),minus FedAvg (per-client)
+Logistic regression,1,0.1235,,0.8153,-0.2527,-0.1202,-0.0877
+Gradient-boosted trees,1,0.1892,,0.8918,-0.1870,-0.0546,-0.0220
+Random forest,20,0.2311,0.0007,0.7713,-0.1450,-0.0126,+0.0199

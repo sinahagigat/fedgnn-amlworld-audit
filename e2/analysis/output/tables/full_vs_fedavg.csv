@@ -1,0 +1,7 @@
+protocol,design,n,minus FedAvg [95% CI],wins,Holm p
+full budget,FedProto,20,"-0.0100 [-0.0157, -0.0042]",4,0.0060
+full budget,Soft,20,"-0.0070 [-0.0136, -0.0004]",6,0.0400
+full budget,FedAvg-MLP,20,"-0.0087 [-0.0152, -0.0023]",3,0.0385
+early stopping,FedProto,20,"-0.0093 [-0.0159, -0.0026]",4,0.0249
+early stopping,Soft,20,"-0.0087 [-0.0173, -0.0002]",7,0.0637
+early stopping,FedAvg-MLP,20,"-0.0169 [-0.0339, +0.0001]",3,0.0249

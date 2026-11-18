@@ -1,0 +1,10 @@
+variant,AB,AC,AL,AR,F0,F1,F2,F3,F4,NB,NC
+Centralized_GCN,20,0,0,0,0,0,0,0,0,0,20
+Centralized_MLP,20,0,0,0,0,0,0,0,0,0,20
+FedAvg_GCN,20,20,20,20,20,20,20,20,20,20,0
+FedAvg_MLP,20,20,20,20,0,0,0,0,0,20,0
+FedGNN_Hard_GCN,20,0,20,0,0,0,0,0,0,0,0
+FedGNN_Soft_GCN,20,20,20,20,20,20,20,20,20,20,0
+FedGNN_Soft_Virtual_GAT,20,0,20,0,0,0,0,0,0,0,0
+FedGNN_Soft_Virtual_GCN,20,0,20,0,0,0,0,0,0,0,0
+FedProto_GCN,20,0,20,0,0,0,0,0,0,20,0
