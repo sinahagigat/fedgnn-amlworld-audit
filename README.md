@@ -58,6 +58,11 @@ stores a hash of that code. This means some leftovers from earlier versions are 
 config names from older versions of the code to the current ones; the configs in `configs/` already
 use the current names, so it does nothing when you rerun the released jobs.
 
+Some docstrings in `src/` are also older than the final analysis, for example the one in
+`build_global_test_split` still treats global inference as the main evaluation, which the paper
+no longer does. `src/stats.py` is not used for any number in the paper; all reported statistics
+come from the scripts in `analysis/`.
+
 Results repeat to the last digit only with the same number of torch threads, which is written in each
 run log. With another thread count the floating-point sums come out in a different order, and for
 the graph-free models that can be enough to pick a different checkpoint.
